@@ -11,11 +11,11 @@ export default
     "mindserver_port": process.env.MINDSERVER_PORT || 8080,
     
     // the base profile is shared by all bots for default prompts/examples/modes
-    "base_profile": "./profiles/defaults/survival.json", // also see creative.json, god_mode.json
+    "base_profile": "./profiles/defaults/creative.json", // also see creative.json, god_mode.json
     "profiles": ((process.env.PROFILES) && JSON.parse(process.env.PROFILES)) || [
-        "./andy.json",
+        //"./andy.json",
         // "./profiles/gpt.json",
-        // "./profiles/claude.json",
+        "./profiles/claude.json",
         // "./profiles/gemini.json",
         // "./profiles/llama.json",
         // "./profiles/qwen.json",
